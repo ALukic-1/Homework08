@@ -26,4 +26,13 @@ public class ShapeStorage<T extends Shape> extends ArrayList<T> {
     }
 
 
+    <U extends T> void importLargeShapes(ShapeStorage<U> other, double minArea) {
+        for (U x : other) {
+            if (x.getArea() >= minArea) {
+
+                storedShapes.add(x);
+            }
+        }
+
+    }
 }
