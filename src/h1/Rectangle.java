@@ -18,6 +18,6 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return "Rectangle with width "+ width + " length: "+length + " and Area: "+getArea();
+        return String.format("Rectangle: width=%.2f, length=%.2f", width, length);
     }
 }

@@ -15,6 +15,6 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return "Circle with radius: "+radius + " and Area: " + getArea();
+        return String.format("Circle: radius=%.2f", radius);
     }
 }
