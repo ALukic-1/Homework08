@@ -2,8 +2,14 @@ package h1;
 
 public class Rectangle extends Shape {
 
-    int width;
-    int length;
+    double width;
+    double length;
+
+    public Rectangle(double width, double length){
+        this.width = width;
+        this.length = length;
+    }
+
 
     @Override
     double getArea() {
@@ -12,6 +18,6 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return "Rectangle";
+        return "Rectangle with width "+ width + " length: "+length + " and Area: "+getArea();
     }
 }
